@@ -1,0 +1,7 @@
+gate,estimate_or_bound,point_estimate,operator,threshold,pass,method
+risk_h0020,0.00023934593932851665,,<=,0.05,1,one-sided Clopper-Pearson upper bound on complete missions
+risk_h0060,0.0003423356512413169,,<=,0.05,1,one-sided Clopper-Pearson upper bound on complete missions
+risk_h0120,0.00023934593932851665,,<=,0.05,1,one-sided Clopper-Pearson upper bound on complete missions
+eligible_passage,0.9339326967162543,,>=,0.25,1,complete-mission cluster-bootstrap lower bound
+overall_authorization,0.25550554292929295,,>=,0.05,1,complete-mission cluster-bootstrap lower bound
+refresh_gain_vs_equal_spending,0.01335,0.0111,<,0.0,0,paired complete-mission bootstrap upper bound

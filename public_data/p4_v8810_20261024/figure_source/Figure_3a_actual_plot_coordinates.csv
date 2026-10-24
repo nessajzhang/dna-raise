@@ -1,0 +1,5 @@
+policy,x_mean_refreshes,y_plot_upper_percent,stored_bound_percent,risk_gate_percent,y_interpretation,source
+Five-year periodic,11.0,0,0.023934593932851668,5.0,structural_zero_no_deferral,Figure_3a_risk_burden_source_data.csv; build_target_use_figure_v889.py
+Posterior mean,5.1383,39.19804273692236,39.19804273692236,5.0,maximum_hazard_specific_one_sided_upper_bound,Figure_3a_risk_burden_source_data.csv; build_target_use_figure_v889.py
+Posterior Q95,5.822616666666667,2.58745360975337,2.58745360975337,5.0,maximum_hazard_specific_one_sided_upper_bound,Figure_3a_risk_burden_source_data.csv; build_target_use_figure_v889.py
+Selected screen,7.844983333333333,0.24748613931115104,0.24748613931115104,5.0,maximum_hazard_specific_one_sided_upper_bound,Figure_3a_risk_burden_source_data.csv; build_target_use_figure_v889.py

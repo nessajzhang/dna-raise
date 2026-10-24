@@ -1,0 +1,7 @@
+study_id,candidate_profile,candidate_gamma,reference_profile,missions,mean_refresh_difference_candidate_minus_equal,two_sided_95_lower,two_sided_95_upper
+paper4_nc_v8_8_independent_structural_challenge_20260905,gamma_m2p0,-2.0,gamma_p0p0,15000,0.19486666666666666,0.18673333333333333,0.2028
+paper4_nc_v8_8_independent_structural_challenge_20260905,gamma_m1p0,-1.0,gamma_p0p0,15000,0.058,0.0522,0.06393333333333333
+paper4_nc_v8_8_independent_structural_challenge_20260905,gamma_m0p5,-0.5,gamma_p0p0,15000,0.018933333333333333,0.0148,0.023133333333333332
+paper4_nc_v8_8_independent_structural_challenge_20260905,gamma_p0p5,0.5,gamma_p0p0,15000,0.011,0.0071333333333333335,0.014866666666666667
+paper4_nc_v8_8_independent_structural_challenge_20260905,gamma_p1p0,1.0,gamma_p0p0,15000,0.026,0.020666666666666667,0.031266666666666665
+paper4_nc_v8_8_independent_structural_challenge_20260905,gamma_p2p0,2.0,gamma_p0p0,15000,0.08366666666666667,0.07653333333333333,0.09066666666666667

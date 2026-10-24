@@ -1,0 +1,4 @@
+true_hazard,minimum_refreshes_among_enumerated_periodic_schedules,largest_interval_at_minimum_refreshes,enumerated_intervals,comparison_class,claim_upgrade_allowed
+0.002,1,45,12,periodic schedules at the declared inspection grid,False
+0.006,3,15,12,periodic schedules at the declared inspection grid,False
+0.012,11,5,12,periodic schedules at the declared inspection grid,False

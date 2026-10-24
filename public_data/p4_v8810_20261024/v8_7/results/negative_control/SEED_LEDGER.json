@@ -1,0 +1,17 @@
+{
+  "study_id": "paper4_nc_v8_7_target_use_comparator_20260905",
+  "namespace": "paper4-v8.7|negative-control|20260905",
+  "missions_per_hazard": 5000,
+  "hazards": [
+    0.006
+  ],
+  "derivation": "uint64(first 8 bytes SHA256(study|namespace|hazard|episode))",
+  "first_last": {
+    "0.006": {
+      "first_episode": 0,
+      "first_seed": 7224869247320522905,
+      "last_episode": 4999,
+      "last_seed": 10743879022665911100
+    }
+  }
+}

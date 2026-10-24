@@ -1,0 +1,91 @@
+{
+  "claim_ceiling": "synthetic model-internal structural challenge; physical and external validation NOT_RUN",
+  "config": {
+    "actual_observation_rho": 0.001,
+    "actual_service_rho": 0.0001,
+    "alpha_total": 0.05,
+    "archive_oligos": 10000,
+    "declared_acceleration_ceiling": 0.03,
+    "declared_detection_floor": 0.8,
+    "declared_observation_rho": 0.001,
+    "declared_service_rho": 0.0001,
+    "erasure_tolerance": 0.1,
+    "horizon_years": 60,
+    "inspection_interval": 5,
+    "recoverability_target": 0.99,
+    "sentinel_size": 3000,
+    "true_acceleration": 0.03,
+    "true_detection_factor": 0.8
+  },
+  "environment": {
+    "host": "c2n022",
+    "numpy": "1.26.4",
+    "python": "3.9.25",
+    "scipy": "1.13.1"
+  },
+  "failure_statuses": [
+    "NO_QUALIFIED_NONZERO_PROFILE",
+    "PRIMARY_GATES_FAIL",
+    "OFFLINE_CONTROL_INCONCLUSIVE"
+  ],
+  "gammas": [
+    -2.0,
+    -1.0,
+    -0.5,
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "hazards": [
+    0.002,
+    0.006,
+    0.012
+  ],
+  "locked_at": "2026-09-05T14:18:37.314254+00:00",
+  "novelty": {
+    "L0": true,
+    "L1": true,
+    "L2": true,
+    "L3": false
+  },
+  "predecessor_sha256": "6BAECA7E25E618946F7BA067C5861AE6F67CBA7A9D6BB4BB1AC4EC132BC3BC30",
+  "prelock_validation": {
+    "self_test_stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "self_test_stdout_sha256": "496D64338D3E0A51EB967FD9497F67A1913717E5BBA9F8B6428CAA12C0252D21",
+    "smoke_evidence_status": "NOT_EVIDENCE",
+    "smoke_manifest_sha256": "7FBFF69776094A553A90569A0D5897F66C24EB6FF0A412E770E4A11993F57B65",
+    "smoke_rows": 210
+  },
+  "primary_gates": {
+    "alpha_per_gate": 0.008333333333333333,
+    "eligible_passage_lower": 0.25,
+    "family_alpha": 0.05,
+    "gate_count": 6,
+    "overall_authorization_lower": 0.05,
+    "paired_refresh_difference_upper_selected_minus_equal": 0.0,
+    "risk_upper_each_hazard": 0.05
+  },
+  "review_synthesis_sha256": "93662C7724EB59020D976EDE3198A6AF4A7B658B3B799F5CEF31BFC9ED8CBA2E",
+  "sample_sizes": {
+    "bootstrap_replicates": 20000,
+    "offline_control_missions": 5000,
+    "test_missions_per_hazard": 20000,
+    "tune_missions_per_hazard": 5000
+  },
+  "script_sha256": "8E691F004FECD8D430268E67DBFCB4713A7E009265F4A65B7E1DAC6492CC9DD1",
+  "seed_namespaces": {
+    "offline_control": "paper4-v8.8|offline-control|20260905",
+    "test": "paper4-v8.8|test|20260905",
+    "tune": "paper4-v8.8|tune|20260905"
+  },
+  "selection_rule": "nonzero gamma; tuning authorization point estimate >=0.05; eligible-passage point estimate >=0.25; minimum equal-hazard mean refreshes; ties by abs(gamma), then gamma",
+  "status": "LOCKED",
+  "study_id": "paper4_nc_v8_8_independent_structural_challenge_20260905",
+  "supporting_file_hashes": {
+    "V8_8_METHOD_DECISION_RECORD.md": "15F9639AFFA32D05274FB4CA68CEE6EBC6A283EE3B3608A41B735F8E0B63073C",
+    "V8_8_METHOD_EVIDENCE_TABLE.md": "D5AB7E8748FAD7D8AB1E8683078F2ECE43D1E1766BF1BAC269B3A79B3C5F8BEE",
+    "V8_8_STATISTICAL_ANALYSIS_PLAN.md": "55791E9ED9855AB5481BB23591330ACCB8DF02F1759DD93F25243A32A4329CDA",
+    "search_strategy.md": "391CCB5C456FF6F9320CE186D81473FCA0A178AB846EDF6F2EFAD47261137778"
+  }
+}

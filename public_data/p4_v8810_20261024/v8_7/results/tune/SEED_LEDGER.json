@@ -1,0 +1,31 @@
+{
+  "study_id": "paper4_nc_v8_7_target_use_comparator_20260905",
+  "namespace": "paper4-v8.7|tune|20260905",
+  "missions_per_hazard": 5000,
+  "hazards": [
+    0.002,
+    0.006,
+    0.012
+  ],
+  "derivation": "uint64(first 8 bytes SHA256(study|namespace|hazard|episode))",
+  "first_last": {
+    "0.002": {
+      "first_episode": 0,
+      "first_seed": 3511458601719724966,
+      "last_episode": 4999,
+      "last_seed": 18394715432562238546
+    },
+    "0.006": {
+      "first_episode": 0,
+      "first_seed": 1867830580177436276,
+      "last_episode": 4999,
+      "last_seed": 12490153499184067335
+    },
+    "0.012": {
+      "first_episode": 0,
+      "first_seed": 1091233812270923955,
+      "last_episode": 4999,
+      "last_seed": 16792652334827739489
+    }
+  }
+}

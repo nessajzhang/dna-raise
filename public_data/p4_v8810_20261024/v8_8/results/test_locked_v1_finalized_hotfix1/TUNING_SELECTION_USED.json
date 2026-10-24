@@ -1,0 +1,20 @@
+{
+  "created_at": "2026-09-05T14:20:06.862134+00:00",
+  "eligible_profiles": [
+    "gamma_p0p5",
+    "gamma_m0p5",
+    "gamma_p1p0",
+    "gamma_m1p0",
+    "gamma_p2p0",
+    "gamma_m2p0"
+  ],
+  "selected_gamma": 0.5,
+  "selected_profile": "gamma_p0p5",
+  "selection_rule": "among nonzero gamma profiles with authorization >=0.05 and eligible passage >=0.25, minimize equal-hazard mean refreshes; ties favor smaller absolute gamma then smaller gamma",
+  "selection_source": "tuning cohort only",
+  "study_id": "paper4_nc_v8_8_independent_structural_challenge_20260905",
+  "thresholds": {
+    "authorization_rate_point": 0.05,
+    "eligible_passage_rate_point": 0.25
+  }
+}

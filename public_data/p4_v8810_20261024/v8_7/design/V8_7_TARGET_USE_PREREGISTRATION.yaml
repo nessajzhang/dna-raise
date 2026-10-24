@@ -1,0 +1,84 @@
+schema_version: "1.0"
+study_id: "paper4_nc_v8_7_target_use_comparator_20260905"
+created_at: "2026-09-05T17:25:00+08:00"
+predecessor: "Paper4 NC V8.6.4.1"
+predecessor_mutation_allowed: false
+evidence_scope: "synthetic model-internal target-use qualification"
+physical_qualification: "NOT_RUN"
+target_use:
+  horizon_years: 60
+  inspection_interval_years: 5
+  decision_opportunities: 11
+  sentinel_size: 300
+  archive_oligos: 10000
+  erasure_tolerance: 0.10
+  recoverability_target: 0.99
+  hazard_support: [0.002, 0.006, 0.012]
+  hazard_weights: [0.3333333333333333, 0.3333333333333333, 0.3333333333333333]
+  hazard_observed_by_policy: false
+  observation_law: "conditionally independent exact binomial counts"
+  detection_factor_true: 1.0
+  detection_floor_declared: 1.0
+  acceleration_true_per_year: 0.0
+  acceleration_ceiling_declared_per_year: 0.0
+  refresh: "perfect reset to cycle age zero"
+policies:
+  adaptive_base: ["posterior_mean", "posterior_conservative"]
+  adaptive_wrapped: ["posterior_mean+screen", "posterior_conservative+screen"]
+  periodic_intervals_years: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60]
+  oracle_role: "extra-information diagnostic only"
+screen:
+  alpha_total: 0.05
+  allocation: "uniform over 11 looks"
+  per_look_alpha: 0.004545454545454546
+  propagation_bound: "tight constant-hazard"
+cohorts:
+  tune:
+    missions_per_hazard: 5000
+    seed_namespace: "paper4-v8.7|tune|20260905"
+  test:
+    missions_per_hazard: 20000
+    seed_namespace: "paper4-v8.7|test|20260905"
+  negative_control:
+    missions: 5000
+    true_hazard: 0.006
+    true_detection_factor: 0.8
+    declared_detection_floor: 1.0
+    true_acceleration_per_year: 0.03
+    declared_acceleration_ceiling_per_year: 0.0
+    seed_namespace: "paper4-v8.7|negative-control|20260905"
+eligibility:
+  requires_base_candidate_no_refresh: true
+  next_state_relative_dropout_margin: 0.50
+  condition: "true_next_dropout <= (1-0.50)*q_crit"
+primary_family_alpha: 0.05
+primary_gate_count: 6
+alpha_per_gate: 0.008333333333333333
+gates:
+  - id: "risk_h0002"
+    statistic: "one-sided exact upper bound for any under-target authorization per mission"
+    threshold: "<=0.05"
+  - id: "risk_h0006"
+    statistic: "one-sided exact upper bound for any under-target authorization per mission"
+    threshold: "<=0.05"
+  - id: "risk_h0012"
+    statistic: "one-sided exact upper bound for any under-target authorization per mission"
+    threshold: "<=0.05"
+  - id: "eligible_passage"
+    statistic: "complete-mission cluster-bootstrap lower bound for screen passage among eligible candidate deferrals"
+    threshold: ">=0.25"
+  - id: "overall_authorization"
+    statistic: "mission-cluster bootstrap lower bound for final no-refresh authorizations per opportunity"
+    threshold: ">=0.05"
+  - id: "refresh_gain"
+    statistic: "paired mission bootstrap upper bound for wrapper minus risk-only periodic mean refreshes"
+    threshold: "<-0.5"
+selection:
+  adaptive: "all five pre-burden gates; minimize mean refreshes, maximize authorization, lexical tie-break"
+  periodic_joint: "three risk gates plus overall authorization; minimize mean refreshes, lexical tie-break"
+  periodic_risk_only: "three risk gates; minimize mean refreshes, lexical tie-break"
+mandatory_negative_reporting: true
+execution_order: ["tune", "negative_control", "test"]
+test_requires_locked_detected_negative_control: true
+test_run_count_allowed: 1
+manuscript_claim_ceiling: "model-internal target-use comparison; never physical preservation, returned-file recovery, economic utility, or acceptance prediction"

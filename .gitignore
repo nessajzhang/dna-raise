@@ -23,3 +23,7 @@ Source_Data/
 *.fa
 *.zip
 *.log
+
+# Explicit author-authorized frozen synthetic core data.
+!public_data/
+!public_data/**

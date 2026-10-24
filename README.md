@@ -9,14 +9,17 @@ observation, deterioration and recovery-service models.
 
 ## Release scope
 
-This repository contains source code, dependency specifications, usage notes
-and source identities. It does not distribute mission-level simulation
-records, figure source data, third-party datasets, manuscript files, compiled
-figures, private research archives or cluster logs. Plotting and retrospective
-analysis programs therefore require their corresponding input files.
+This repository contains the frozen scientific source code, dependency
+specifications, usage notes and source identities. As of24 October2026, the
+author-generated simulation source tables and frozen V8.7/V8.8 core mission
+records are provided in [public_data/p4_v8810_20261024](public_data/p4_v8810_20261024/).
+See that directory's README and exact file manifest for coverage and the
+read-only verifier. Third-party molecular datasets, manuscripts, compiled
+figures, private development archives and cluster logs are not distributed.
 
-The scientific Python files are byte-identical to the preserved research
-sources. `SOURCE_PROVENANCE.tsv` records each file's relative source identity
+The original41 scientific Python files are byte-identical to the preserved
+research sources. The newly added `verify_public_data.py` is a standard-library,
+read-only publication checker; it is not a replacement for a scientific driver. `SOURCE_PROVENANCE.tsv` records each file's relative source identity
 and SHA256. Existing internal names such as `+screen` denote the DNA-RAISE
 authorization layer. Historical helper functions remain within their original
 modules; they are not additional approved manuscript figures or new results.
@@ -47,7 +50,7 @@ V8.8 with Python 3.9.25, NumPy 1.26.4 and SciPy 1.13.1. Requirements files
 specify these direct dependencies. They are not complete operating-system or
 transitive dependency locks. The plotting specification combines documented
 plotting dependencies; a fresh end-to-end plotting environment has not been
-certified by this code-only release.
+certified by the original code-only release or by the present data publication.
 
 ```bash
 python -m venv .venv
@@ -75,8 +78,8 @@ frozen experiments or as a self-contained reconstruction of all archived data.
 
 Preserve the original relative input layout when supplying your input files.
 For example, current plotting wrappers expect `Code/source_data/` and its
-`inherited/` subdirectory. Original study data and external molecular datasets
-are not bundled here. Public-data acquisition/replay programs identify their
+`inherited/` subdirectory. Selected frozen simulation inputs are in public_data/p4_v8810_20261024/;
+external molecular datasets and the complete historical archive are not bundled here. Public-data acquisition/replay programs identify their
 upstream sources; upstream rights and access conditions remain applicable.
 
 ## Validation and licensing

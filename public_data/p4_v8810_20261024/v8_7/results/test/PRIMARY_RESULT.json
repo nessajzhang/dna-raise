@@ -1,0 +1,11 @@
+{
+  "study_id": "paper4_nc_v8_7_target_use_comparator_20260905",
+  "status": "QUALIFIED_ADAPTIVE_SCREEN_WITH_NO_JOINT_PERIODIC_COMPARATOR",
+  "all_primary_gates_pass": true,
+  "selected_adaptive_policy": "posterior_mean+screen",
+  "selected_periodic_risk_only_interval": 5,
+  "selected_periodic_joint_interval": "NO_QUALIFIED_PERIODIC_JOINT",
+  "refresh_difference_point_estimate": -3.1550166666666666,
+  "refresh_difference_upper": -3.11885,
+  "claim_ceiling": "model-internal target-use comparison only; physical qualification NOT_RUN"
+}

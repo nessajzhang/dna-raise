@@ -1,0 +1,5 @@
+policy,mean_refreshes,max_hazard_specific_upper_percent,risk_gate_percent,role,source
+Five-year periodic,11.0,0.023934593932851668,5.0,Risk-only periodic comparator,si_v87_periodic_rows.tex and zero authorized deferrals
+Posterior mean,5.1383,39.19804273692236,5.0,Unwrapped descriptive comparator,Figure_3_target_use_source_data.csv panel a risk-upper triple
+Posterior Q95,5.822616666666667,2.58745360975337,5.0,Unwrapped descriptive comparator,Figure_3_target_use_source_data.csv panel a risk-upper triple
+Selected screen,7.844983333333333,0.24748613931115104,5.0,Confirmatory screened policy,Figure_3_target_use_source_data.csv panel b and d

@@ -1,0 +1,7 @@
+archive_oligos,erasure_tolerance,recoverability_target,intraclass_correlation,critical_mean_dropout,critical_dropout_relative_to_independent,model_scope
+10000,0.1,0.99,0.0,0.0932270931865766,1.0,beta-binomial exchangeable-erasure stress
+10000,0.1,0.99,1e-06,0.09319326913744876,0.9996371864876217,beta-binomial exchangeable-erasure stress
+10000,0.1,0.99,1e-05,0.09289630258873778,0.9964517761250283,beta-binomial exchangeable-erasure stress
+10000,0.1,0.99,0.0001,0.0904352801729399,0.9700536301389404,beta-binomial exchangeable-erasure stress
+10000,0.1,0.99,0.001,0.07807045607228404,0.8374223994739449,beta-binomial exchangeable-erasure stress
+10000,0.1,0.99,0.01,0.0409833000975359,0.4396071860303044,beta-binomial exchangeable-erasure stress

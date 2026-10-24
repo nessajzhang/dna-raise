@@ -1,0 +1,12 @@
+{
+  "all_primary_gates_pass": false,
+  "claim_ceiling": "model-internal independent structural challenge only; physical qualification, empirical ICC estimation, and external validation NOT_RUN",
+  "reference_gamma": 0.0,
+  "reference_profile": "gamma_p0p0",
+  "refresh_difference_point_estimate": 0.0111,
+  "refresh_difference_upper": 0.01335,
+  "selected_gamma": 0.5,
+  "selected_profile": "gamma_p0p5",
+  "status": "PRIMARY_GATES_FAIL",
+  "study_id": "paper4_nc_v8_8_independent_structural_challenge_20260905"
+}

@@ -1,0 +1,13 @@
+{
+  "interpretation": "truth-aware offline verification control only; it does not detect unknown observation dependence during deployment",
+  "missions": 5000,
+  "missions_with_under_target_authorization": 9,
+  "pooled_into_primary_evidence": false,
+  "realized_chain_failure_looks": 4883,
+  "runtime_detector": false,
+  "sampling_undercoverage_looks": 4883,
+  "selected_gamma": 0.5,
+  "status": "OFFLINE_CONTROL_EXPOSED_MISSPECIFICATION",
+  "study_id": "paper4_nc_v8_8_independent_structural_challenge_20260905",
+  "under_target_authorizations": 9
+}

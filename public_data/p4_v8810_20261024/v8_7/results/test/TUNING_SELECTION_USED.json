@@ -1,0 +1,25 @@
+{
+  "study_id": "paper4_nc_v8_7_target_use_comparator_20260905",
+  "created_at": "2026-09-05T10:30:34.971182+00:00",
+  "selection_source": "tuning cohort only",
+  "selected_adaptive_policy": "posterior_mean+screen",
+  "selected_periodic_joint_interval": "NO_QUALIFIED_PERIODIC_JOINT",
+  "selected_periodic_risk_only_interval": 5,
+  "adaptive_qualified_candidates": [
+    "posterior_mean+screen",
+    "posterior_conservative+screen"
+  ],
+  "periodic_joint_candidates": [],
+  "periodic_risk_only_candidates": [
+    5
+  ],
+  "thresholds": {
+    "risk_upper": 0.05,
+    "eligible_passage_lower": 0.25,
+    "overall_authorization_lower": 0.05,
+    "alpha_gate": 0.008333333333333333
+  },
+  "adaptive_summary_sha256": "DAE2285C28F73EECFF56FC9A945FC24A82B1639788814976E3ADA8BE2ACD6A9B",
+  "adaptive_episodes_sha256": "F78B8446A6A2EA87B29A1B30B6082D8E32E9B1D606FA7BD1325BA4CDEC1B31F0",
+  "periodic_frontier_sha256": "D1B13DA793E92FFE530AAD2F9EAA7AA7A5F6F7CE5F624F892E4B5F0BB31D73CE"
+}
